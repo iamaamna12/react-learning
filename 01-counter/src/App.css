@@ -1,0 +1,24 @@
+/*now we will add some styling to our counter app*/
+
+button{
+    
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background-color: #7cb7ff;
+  border-radius: 5px;    
+}
+
+h1{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+div{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}

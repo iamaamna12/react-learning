@@ -15,7 +15,7 @@ function App() {
      typeof='text'
      placeholder='Start Typing...'
      value={text}
-    onChange={(e)=>{setText(event.target.value)}}
+    onChange={(e)=>{setText(e.target.value)}}
     ></textarea>
     <p>{text.length}/200 Characters</p>
     {text.length>200 ? <p style={{color:'red'}} >Character Limit Exceeded</p> : null}

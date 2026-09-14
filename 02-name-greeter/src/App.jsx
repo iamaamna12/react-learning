@@ -16,7 +16,7 @@ const [name, setName] = useState("");
     type='text'
     placeholder='Enter Your Name'
     value={name}
-    onChange={(e)=>{setName(event.target.value)}}></input>
+    onChange={(e)=>{setName(e.target.value)}}></input>
 
     <h2> Hello {name || "Stranger" }!</h2>
    </div>

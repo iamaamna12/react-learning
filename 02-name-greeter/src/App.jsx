@@ -18,10 +18,12 @@ const [name, setName] = useState("");
       }}
       >
       </input>
-      <h2>Hello! {name || "Stranger"}</h2>
+      <h2>Hello {name || "Stranger"}!</h2>
     </div>
+    <footer>
+      <p>Made with ❤️ by <a href="https://aamnashahab.com" target="_blank">Aamna Shahab</a></p>
+    </footer>
     </>
-  
   )
 }
 

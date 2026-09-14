@@ -1,16 +1,29 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [text, setText] = useState("")
 
   return (
     <>
-      
-       
+    <div>
+     <h1>Character Counter with React</h1>
+
+     <textarea
+     rows={8}
+     cols={50}
+     typeof='text'
+     placeholder='Start Typing...'
+     value={text}
+    onChange={(e)=>{setText(event.target.value)}}
+    ></textarea>
+    <p>{text.length}/200 Characters</p>
+    {text.length>200 ? <p style={{color:'red'}} >Character Limit Exceeded</p> : null}
+
+    </div>
+    <footer bottom={0} style={{textAlign:'center', marginTop:'20px'}}>
+      Made with ❤️ by <a href="https://aamnashahab.com" target="_blank">Aamna Shahab</a>
+    </footer>    
     </>
   )
 }

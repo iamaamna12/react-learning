@@ -14,9 +14,15 @@ function App() {
         <input 
         type={showPassword ? "text" : "password" }
         placeholder='Enter password'
-        onChange={(e) => setCount(e.target.value)}  
+        onChange={(e) => setCount(e.target.value)} >
+        </input> 
 
-        />
+        <br></br>
+        <button onClick={() => setShowPassword(!showPassword)}>
+          {showPassword ? "Hide" : "Show"} Password
+        </button>
+        
+      
 
 
       </div>

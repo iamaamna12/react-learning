@@ -40,6 +40,9 @@ function App() {
     {/* .length will be shown how many products are there */}
     
   </div>
+  <footer style={{position: "fixed", bottom: "0", width: "100%", textAlign: "center"}}>
+      <p>Made with ❤️ by <a href="https://aamnashahab.com" target="_blank" rel="noopener noreferrer">Aamna Shahab</a></p>
+    </footer>
     </>
   )
 }
